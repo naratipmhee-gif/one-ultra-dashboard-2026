@@ -159,6 +159,7 @@ tfoot tr { background: #fdf8f3; border-top: 2px solid #d4a870; }
   .header { padding: 0 16px; }
   .content { padding: 16px; }
 }
+
 </style>
 </head>
 <body>
@@ -255,7 +256,7 @@ tfoot tr { background: #fdf8f3; border-top: 2px solid #d4a870; }
 </div>
 
 <script>
-const TODAY = "2026-03-10";
+const TODAY = "2026-04-06";
 const RAW = [
   {id:1,dept:"Marketing",date:"2026-01-14",name:"Amex (การบินไทย)",venue:"โรง VIP 1",time:"13:00-18:00",owner:"Koy",type:"เช่าโรง",seats:0,ticket:0,service:76000,snack:7000,total:83000},
   {id:2,dept:"Marketing",date:"2026-01-14",name:"Krungsri",venue:"โรงที่ 3",time:"14:30",owner:"First",type:"เหมารอบ",seats:138,ticket:23100,service:10640,snack:11200,total:44940},
@@ -273,7 +274,15 @@ const RAW = [
   {id:14,dept:"Marketing",date:"2026-03-09",name:"ข้อมูลเพลหลัง One BKK",venue:"โรงที่ 5",time:"07:00-12:00",owner:"พี่หนุย",type:"เช่าโรง",seats:0,ticket:0,service:0,snack:0,total:0},
   {id:15,dept:"Marketing",date:"2026-03-09",name:"Landlord (คุณตา) จองห้องแต่งตัว",venue:"จองห้องแต่งตัว",time:"",owner:"Orb",type:"เช่าโรง",seats:0,ticket:0,service:0,snack:0,total:0},
   {id:16,dept:"Marketing",date:"2026-03-17",name:"Exclusive Night by est: Project Hail Mary",venue:"โรงที่ 5",time:"19:00",owner:"Orb",type:"ชมร่วม",seats:0,ticket:0,service:0,snack:0,total:0},
-  {id:17,dept:"Operation",date:"2026-03-19",name:"ยอดยุทธดาบไร้พาย Blades of the Guardians",venue:"โรง 1-6",time:"19:30",owner:"วันอัลทรา",type:"เหมารอบ",seats:0,ticket:0,service:0,snack:0,total:0},
+  {id:17,dept:"Operation",date:"2026-03-19",name:"ยอดยุทธดาบไร้พาย Blades of the Guardians",venue:"โรง 1-6",time:"19:30",owner:"วันอัลทรา",type:"เหมารอบ",seats:681,ticket:238890,service:21110,snack:0,total:260000},
+  {id:18,dept:"Marketing",date:"2026-04-01",name:"Event : ฉายภาพยนตร์สั้น นักศึกษา 4 สถาบัน",venue:"โรงที่ 4",time:"10:30-14:00",owner:"Orb / ชิลลิ่ง",type:"เช่าโรง",seats:0,ticket:0,service:0,snack:0,total:0},
+  {id:19,dept:"Operation",date:"2026-04-01",name:"The Super Mario Galaxy Movie",venue:"โรงที่ 2",time:"16:30",owner:"วันอัลทรา",type:"เหมารอบ",seats:93,ticket:26250,service:0,snack:1750,total:28000},
+  {id:20,dept:"Marketing",date:"2026-04-01",name:"GOHAN (GDH)",venue:"โรงที่ 5",time:"18:30",owner:"Arm",type:"เช่าโรง",seats:0,ticket:0,service:37450,snack:16800,total:54250},
+  {id:21,dept:"Marketing",date:"2026-04-07",name:"CSR รร.สุนีพิทยา",venue:"โรงที่ 2",time:"11:30",owner:"Orb",type:"เช่าโรง",seats:0,ticket:0,service:0,snack:0,total:0},
+  {id:22,dept:"Marketing",date:"2026-04-27",name:"Thai bev (Est+Oishi)",venue:"โรง VIP 1",time:"13:00-18:00",owner:"P'Anne / P. ICE",type:"เช่าโรง",seats:0,ticket:0,service:0,snack:0,total:0},
+  {id:23,dept:"Marketing",date:"2026-04-29",name:"Tangible",venue:"โรงที่ 5",time:"ALL",owner:"First",type:"เช่าโรง",seats:0,ticket:0,service:0,snack:0,total:0},
+  {id:24,dept:"Marketing",date:"2026-04-30",name:"ลูกค้าการบินไทยโรง VIP Devil Prada",venue:"โรง VIP 1",time:"19:00",owner:"Koy",type:"เหมารอบ",seats:0,ticket:0,service:0,snack:0,total:0},
+  {id:25,dept:"Marketing",date:"2026-04-30",name:"ชมภาพยนตร์ devil wears prada",venue:"โรงที่ 5",time:"20:00",owner:"P'Anne",type:"เหมารอบ",seats:0,ticket:0,service:0,snack:0,total:0},
 ];
 
 const MONTHS_TH=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
